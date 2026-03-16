@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #f2f4f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .product-card {
+            width: 280px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        .product-image img {
+            width: 100%;
+            object-fit: cover;
+            height: 240px;
+        }
+        .product-details {
+            padding: 18px;
+        }
+        .product-details h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .product-details p {
+            margin: 0;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 12px;
+        }
+        .add-btn {
+            width: 100%;
+            padding: 10px;
+            background: #3a7bfd;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .add-btn:hover {
+            background: #336ad1;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://www.tokopda.com/uploads/products/res_S26U_WHITE_A.jpg" alt="Fuffi Product">
+        </div>
+        <div class="product-details">
+            <h2>Samsung S26 Ultra</h2>
+            <p>Samsung S26 Ultra AI Smartphone - Global 5G Dual SIM, 6.9-inch QHD+ Dynamic Amoled screen - 16GB RAM</p>
+            <div class="product-price">$2700.94</div>
+            <button class="add-btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
